@@ -82,3 +82,8 @@ footer a:hover {
 footer .copyright {
 background-color: var(--primary) !important;
 }
+
+.text-justify {
+  text-align: justify;
+  line-height: 1.7;
+}
