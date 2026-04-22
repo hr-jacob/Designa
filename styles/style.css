@@ -80,5 +80,5 @@ footer a:hover {
 
 /* COPYRIGHT */
 footer .copyright {
-  background-color: var(--primary-dark);
+background-color: var(--primary) !important;
 }
