@@ -8,7 +8,15 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    body {
+      padding-top: 80px;
+      font-family: 'Playfair Display', serif;
+    }
+
     .hero {
       background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
       height: 90vh;
@@ -18,86 +26,118 @@
       justify-content: center;
       text-align: center;
     }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .navbar {
+      padding: 15px 0;
+    }
+
+    .nav-link {
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+    }
   </style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<!-- HEADER -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand fw-bold" href="#">Designa</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="nav-item">
+            <a class="btn btn-dark ms-3" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Diseño de Interiores</h1>
+      <p>Elegancia y funcionalidad en cada espacio</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Servicios</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Residencial</h5>
+        <p>Diseño personalizado para tu hogar</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Comercial</h5>
+        <p>Espacios que impactan a tus clientes</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Remodelación</h5>
+        <p>Transformamos tus espacios</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Proyectos</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea" class="img-fluid rounded">
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" class="img-fluid rounded">
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="bg-light p-5 text-center">
+    <h2>Contacto</h2>
+    <p>contacto@designaestudio.com.mx</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="text-center p-4">
   <div class="container">
-    
-    <!-- LOGO -->
-    <a class="navbar-brand fw-bold" href="#">Designa</a>
-
-    <!-- BOTON MOBILE -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- MENU -->
-    <div class="collapse navbar-collapse justify-content-end" id="menu">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-        <li class="nav-item">
-          <a class="btn btn-dark ms-3" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-
+    <h5>Designa</h5>
+    <p>Interiorismo y diseño de espacios</p>
+    <p class="mb-0">© 2026 Todos los derechos reservados</p>
   </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <h1>Diseño de Interiores</h1>
-    <p>Elegancia y funcionalidad en cada espacio</p>
-  </div>
-</section>
-
-<!-- SERVICIOS -->
-<section class="container my-5">
-  <h2 class="text-center mb-4">Servicios</h2>
-  <div class="row text-center">
-    <div class="col-md-4">
-      <h5>Residencial</h5>
-      <p>Diseño personalizado para tu hogar</p>
-    </div>
-    <div class="col-md-4">
-      <h5>Comercial</h5>
-      <p>Espacios que impactan a tus clientes</p>
-    </div>
-    <div class="col-md-4">
-      <h5>Remodelación</h5>
-      <p>Transformamos tus espacios</p>
-    </div>
-  </div>
-</section>
-
-<!-- PORTAFOLIO -->
-<section class="container my-5">
-  <h2 class="text-center mb-4">Proyectos</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea" class="img-fluid">
-    </div>
-    <div class="col-md-4">
-      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" class="img-fluid">
-    </div>
-    <div class="col-md-4">
-      <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e" class="img-fluid">
-    </div>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section class="bg-light p-5 text-center">
-  <h2>Contacto</h2>
-  <p>contacto@designaestudio.com.mx</p>
-</section>
+</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
