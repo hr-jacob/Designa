@@ -8,18 +8,53 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Tu CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="styles/style.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      padding-top: 80px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .navbar {
+      padding: 15px 0;
+    }
+
+    .nav-link {
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
       
       <a class="navbar-brand fw-bold" href="#">Designa</a>
@@ -49,7 +84,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container text-center">
+    <div>
       <h1>Diseño de Interiores</h1>
       <p>Elegancia y funcionalidad en cada espacio</p>
     </div>
@@ -89,21 +124,51 @@
       </div>
     </div>
   </section>
-
-  <!-- CONTACTO -->
-  <section class="bg-light p-5 text-center">
-    <h2>Contacto</h2>
-    <p>contacto@designaestudio.com.mx</p>
-  </section>
-
 </main>
 
 <!-- FOOTER -->
-<footer class="text-center p-4">
-  <div class="container">
-    <h5>Designa</h5>
-    <p>Interiorismo y diseño de espacios</p>
-    <p class="mb-0">© 2026 Todos los derechos reservados</p>
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-md-start">
+    <div class="row">
+
+      <!-- MARCA -->
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h5 class="fw-bold">Designa</h5>
+        <p>
+          Creamos espacios únicos combinando estética, funcionalidad y diseño contemporáneo.
+        </p>
+      </div>
+
+      <!-- SERVICIOS -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="fw-bold">Servicios</h6>
+        <p><a href="#" class="text-white text-decoration-none">Residencial</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Comercial</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Remodelación</a></p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="fw-bold">Enlaces</h6>
+        <p><a href="#" class="text-white text-decoration-none">Inicio</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Proyectos</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Contacto</a></p>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="fw-bold">Contacto</h6>
+        <p>Email: contacto@designa.com</p>
+        <p>Tel: +52 999 123 4567</p>
+        <p>Mérida, Yucatán</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="text-center p-3 mt-4" style="background-color: rgba(255,255,255,0.1);">
+    © 2026 Designa - Todos los derechos reservados
   </div>
 </footer>
 
