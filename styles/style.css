@@ -84,3 +84,5 @@ footer a:hover {
 footer .copyright {
   background-color: var(--primary-dark);
 }
+
+body { background: red; }
