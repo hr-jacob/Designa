@@ -21,12 +21,6 @@ body {
   padding: 15px 0;
 }
 
-<style>
-body {
-  padding-top: 40px;
-  font-family: 'Playfair Display', serif;
-}
-
 .navbar-brand {
   color: var(--white) !important;
   letter-spacing: 2px;
